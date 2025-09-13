@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu04KararYapilari", "Konu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu05Metotlar", "Konu05Metotlar\Konu05Metotlar.csproj", "{768047B6-404F-44E3-9A8D-A830184CB201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu06Diziler", "Konu06Diziler\Konu06Diziler.csproj", "{D430C687-1EB4-4A25-AE4D-69F47C4B8DC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{768047B6-404F-44E3-9A8D-A830184CB201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{768047B6-404F-44E3-9A8D-A830184CB201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{768047B6-404F-44E3-9A8D-A830184CB201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D430C687-1EB4-4A25-AE4D-69F47C4B8DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D430C687-1EB4-4A25-AE4D-69F47C4B8DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D430C687-1EB4-4A25-AE4D-69F47C4B8DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D430C687-1EB4-4A25-AE4D-69F47C4B8DC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
