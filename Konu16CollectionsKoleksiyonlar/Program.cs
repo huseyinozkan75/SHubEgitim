@@ -16,7 +16,8 @@ namespace Konu16CollectionsKoleksiyonlar
             // Ornek2();
             // Ornek3();
             // Ornek4();
-            Ornek5();
+            // Ornek5();
+            ListKullanimi();
         }
         static void Ornek1()
         {
@@ -169,5 +170,67 @@ namespace Konu16CollectionsKoleksiyonlar
 
         }
 
+        static void ListKullanimi()
+        {
+            Console.WriteLine("List Kullanımı");
+
+            List<string> sehirler = new();
+            sehirler.Add("Adana");
+            sehirler.Add("Çankırı");
+            sehirler.Add("İstanbul");
+            sehirler.Add("Ankara");
+            sehirler.Add("İzmir");
+            sehirler.Add("Bursa");
+            sehirler.Add("Antalya");
+            Console.WriteLine("Sehirler:" );
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+            List<User> users = new();
+            
+            users.Add(new User
+            {
+                Id = 1,
+                Name = "Ahmet",
+                Email = "123"
+            });
+
+            users.Add(new User
+            {
+                Id = 2,
+                Name = "Serdar",
+                Email = "456"
+            });
+
+            Console.WriteLine("Kullanıcılar: ");
+
+            foreach (var user in users)
+            {
+                Console.WriteLine($"Id: {user.Id}, Name: {user.Name}, Email: {user.Email}");
+            }
+            Console.WriteLine();
+
+            List<User> kullanicilar = new()
+            {
+                new User { Id = 3, Name = "Mehmet", Email = "789" },
+                new User { Id = 4, Name = "Ayşe", Email = "101" }
+            };
+
+            var yeniKullanici = new User
+            {
+                Id = 5,
+                Name = "Fatma",
+                Email = "112"
+            };
+
+            Console.WriteLine("Kullanıcılar listesinde yeni kullanıcı var mı?");
+            Console.WriteLine(kullanicilar.Contains(yeniKullanici));
+            kullanicilar.Add(yeniKullanici);
+            Console.WriteLine(kullanicilar.Contains(yeniKullanici));
+
+
+        }
     }
 }
