@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsAppAdoNetCRUD
+namespace WindowsFormsEntityFrameWorkCRUD
 {
     public partial class Form1 : Form
     {
@@ -26,19 +26,12 @@ namespace WindowsFormsAppAdoNetCRUD
                 return;
             }
 
-            if (txtKullaniciAdi.Text == "Admin" || txtSifre.Text == "123"  )
+            if (txtKullaniciAdi.Text == "Admin" || txtSifre.Text == "123")
             {
                 groupBox1.Visible = false;
                 menuStrip1.Visible = true;
                 return;
             }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            menuStrip1.Visible = false;
-
         }
 
         private void kategoriYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,7 +50,6 @@ namespace WindowsFormsAppAdoNetCRUD
         {
             KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
             kullaniciYonetimi.ShowDialog();
-
         }
     }
 }

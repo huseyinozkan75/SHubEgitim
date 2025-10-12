@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEgitimi", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppAdoNetCRUD", "WindowsFormsAppAdoNetCRUD\WindowsFormsAppAdoNetCRUD.csproj", "{1975E511-B3DF-4933-ADAB-4B72B855412A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEntityFrameWorkCRUD", "WindowsFormsEntityFrameWorkCRUD\WindowsFormsEntityFrameWorkCRUD.csproj", "{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{1975E511-B3DF-4933-ADAB-4B72B855412A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1975E511-B3DF-4933-ADAB-4B72B855412A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1975E511-B3DF-4933-ADAB-4B72B855412A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

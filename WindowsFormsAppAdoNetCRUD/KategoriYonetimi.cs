@@ -101,12 +101,28 @@ namespace WindowsFormsAppAdoNetCRUD
             if (sonuc > 0)
             {
                 Yukle();
-                MessageBox.Show("Kayıt Başarılı");
+                MessageBox.Show("Kayıt Güncelleme Başarılı");
             }
             else
             {
-                MessageBox.Show("Kayıt Başarısız");
+                MessageBox.Show("Kayıt Güncelleme Başarısız");
             }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            var sonuc = DAL.Delete((int)dgvKategoriler.CurrentRow.Cells["Id"].Value);
+
+            if (sonuc > 0)
+            {
+                Yukle();
+                MessageBox.Show("Kayıt Silme Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("Kayıt Silme Başarısız");
+            }
+
         }
     }
 }

@@ -91,7 +91,7 @@
             #region Örnek3
             Araba araba = new() { 
                 Id = 1,
-                M
+                Model = "Astra"
 ,
             };
             #endregion

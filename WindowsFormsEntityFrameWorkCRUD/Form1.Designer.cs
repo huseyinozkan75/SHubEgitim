@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsAppAdoNetCRUD
+﻿namespace WindowsFormsEntityFrameWorkCRUD
 {
     partial class Form1
     {
@@ -37,8 +37,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kategoriYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kullanıcıYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kullanıcıYönetimiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.kuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -51,10 +49,10 @@
             this.groupBox1.Controls.Add(this.txtSifre);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(268, 177);
+            this.groupBox1.Location = new System.Drawing.Point(290, 144);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(441, 212);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Bilgileri";
             // 
@@ -110,8 +108,8 @@
             this.kuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1066, 28);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Size = new System.Drawing.Size(1237, 28);
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // kategoriYönetimiToolStripMenuItem
@@ -128,16 +126,6 @@
             this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
             this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
             // 
-            // kullanıcıYönetimiToolStripMenuItem
-            // 
-            this.kullanıcıYönetimiToolStripMenuItem.Name = "kullanıcıYönetimiToolStripMenuItem";
-            this.kullanıcıYönetimiToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            // 
-            // kullanıcıYönetimiToolStripMenuItem1
-            // 
-            this.kullanıcıYönetimiToolStripMenuItem1.Name = "kullanıcıYönetimiToolStripMenuItem1";
-            this.kullanıcıYönetimiToolStripMenuItem1.Size = new System.Drawing.Size(32, 19);
-            // 
             // kuToolStripMenuItem
             // 
             this.kuToolStripMenuItem.Name = "kuToolStripMenuItem";
@@ -149,14 +137,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 577);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1237, 633);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kullanıcı Girişi";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "EF Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -169,16 +155,14 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.TextBox txtKullaniciAdi;
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kategoriYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ürünYönetimiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kullanıcıYönetimiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kullanıcıYönetimiToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem kuToolStripMenuItem;
     }
 }
