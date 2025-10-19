@@ -78,6 +78,7 @@
             this.btnSil.TabIndex = 14;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -88,6 +89,7 @@
             this.btnGuncelle.TabIndex = 13;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -97,6 +99,7 @@
             this.btnEkle.TabIndex = 12;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // cbDurum
             // 
@@ -191,6 +194,8 @@
             this.dgvKullanicilar.RowTemplate.Height = 24;
             this.dgvKullanicilar.Size = new System.Drawing.Size(895, 549);
             this.dgvKullanicilar.TabIndex = 2;
+            this.dgvKullanicilar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellClick);
+            this.dgvKullanicilar.Click += new System.EventHandler(this.dgvKullanicilar_Click);
             // 
             // KullaniciYonetimi
             // 
@@ -202,6 +207,7 @@
             this.Name = "KullaniciYonetimi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı Yönetimi EF";
+            this.Load += new System.EventHandler(this.KullaniciYonetimi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).EndInit();

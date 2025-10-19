@@ -17,6 +17,7 @@ namespace WindowsFormsAppAdoNetCRUD
             InitializeComponent();
         }
 
+
         private void btnGiris_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) ||

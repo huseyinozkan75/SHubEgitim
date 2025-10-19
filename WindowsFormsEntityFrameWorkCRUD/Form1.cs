@@ -17,20 +17,27 @@ namespace WindowsFormsEntityFrameWorkCRUD
             InitializeComponent();
         }
 
+        DatabaseContext context = new DatabaseContext();
+
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) ||
-                string.IsNullOrWhiteSpace(txtSifre.Text))
+            if ( string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) ||
+                 string.IsNullOrWhiteSpace(txtSifre.Text) )
             {
                 MessageBox.Show("Kullanıcı Adı ve Şifre Boş Geçilemez");
                 return;
             }
 
-            if (txtKullaniciAdi.Text == "Admin" || txtSifre.Text == "123")
+            var user = context.Users.FirstOrDefault(u => u.IsActive && u.Name == txtKullaniciAdi.Text && u.Password == txtSifre.Text);
+
+            if (user != null)
             {
                 groupBox1.Visible = false;
                 menuStrip1.Visible = true;
-                return;
+            }
+            else 
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
             }
         }
 
@@ -50,6 +57,12 @@ namespace WindowsFormsEntityFrameWorkCRUD
         {
             KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
             kullaniciYonetimi.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+            menuStrip1.Visible = false;
         }
     }
 }

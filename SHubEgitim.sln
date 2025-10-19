@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppAdoNetCRUD",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEntityFrameWorkCRUD", "WindowsFormsEntityFrameWorkCRUD\WindowsFormsEntityFrameWorkCRUD.csproj", "{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFWWebApplication", "AspNetFWWebApplication\AspNetFWWebApplication.csproj", "{BEA49A57-435B-47BA-9583-1257B68D229D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4297D7-D95A-4065-A0D1-807DBBBF50CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA49A57-435B-47BA-9583-1257B68D229D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA49A57-435B-47BA-9583-1257B68D229D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA49A57-435B-47BA-9583-1257B68D229D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA49A57-435B-47BA-9583-1257B68D229D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
