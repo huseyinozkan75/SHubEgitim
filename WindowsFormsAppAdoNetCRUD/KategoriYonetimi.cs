@@ -79,8 +79,6 @@ namespace WindowsFormsAppAdoNetCRUD
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-
-
             if (string.IsNullOrWhiteSpace(txtKategoriAdi.Text))
             {
                 MessageBox.Show("Kategori Adı Boş Geçilemez");

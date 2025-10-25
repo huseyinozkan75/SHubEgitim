@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css Eğitimi</title>
+    <style>
+        /* css de yorum satırı */
+        body {background-color: darkblue; color: yellow;}
+        h1 { color: red;}
+        h2, h3 {color: white;}
+    </style>
+    <link href="../stil.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Css Eğitimi</h1>
+    <h2>Css Nedir?</h2>
+    <p>
+        CSS (Cascading Style Sheets - Basamaklı Stil Sayfaları), web sayfalarının görünümünü ve düzenini
+        belirlemek için kullanılan bir stil dilidir. HTML ile birlikte kullanılır ve web sayfalarının
+        tasarımını, renklerini, yazı tiplerini, kenar boşluklarını ve diğer görsel öğelerini kontrol etmek
+        için kullanılır.
+    </p>
+    <h3> Css Yazma Seçenekleri </h3>
+    <ol>
+        <li>
+            Inline CSS: Stil kurallarını doğrudan HTML etiketlerinin "style" özniteliği içinde tanımlama.
+        </li>
+        <li>
+            Sayfa İçi CSS: Stil kurallarını HTML belgesinin style etiketleri içinde tanımlama.
+        </li>
+        <li>
+            Harici CSS: Stil kurallarını ayrı bir .css dosyasında tanımlama ve HTML belgesine link etme.
+        </li>
+
+    </ol>
+
+    <h4>Inline CSS Yazımı</h4>
+    <p style="background-color: red; color: white;">
+
+        Elementlerin açılış etiketlerine style özniteliği eklenerek yazılır. Eğer birden fazla stil kuralı
+        uygulanacaksa, her kural noktalı virgül (;) ile ayrılır. En sondaki kuralın sonunda noktalı virgül
+        kullanılması zorunlu değildir, ancak kodun okunabilirliğini artırmak için önerilir.
+    </p>
+    <h4> Head Tagleri Arasına CSS Yazımı </h4>
+    <p>
+        Sayfa Head alanı içerisinde style etiketleri arasına yazılarak sayfadaki elementlere
+        stil uygulanabilir.
+    </p>
+
+    <h4>
+        Harici CSS dosyası kullanarak tasarım yapılması
+    </h4>
+    <p>
+        Harici bir CSS dosyası oluşturup (style.css gibi) sayfa head alanı içinde link özelliği
+        ile çağırarak sayfa tasarımını şekillendirebiliriz.
+    </p>
+
+    <h3>Css Seçiciler</h3>
+    <h4>1-Element Seçiciler</h4>
+    <p>
+        Sayfadaki elementleri html taglerine göre (p, h1, div vb) seçerek css uygulayabiliriz.
+        <br />
+        Bu durumda sayfadaki tüm elementler seçilecektir.
+    </p>
+
+    <h4>2-Id seçici</h4>
+
+    <div id="idSecici">
+        Sayfadaki elementleri id özelliğine göre seçip stil uygulamamızı sağlar.
+        <br />
+        Genelde sayfadaki tek bir elementi seçmek için kullanırız.
+        <br />
+        Css dosyası içerisinden # karakteri yazılıp elementin Id değeri eklenerek element seçilir
+        <br />
+        Örnek: #idSeçici{}
+    </div>
+
+
+
+    <h4>3-Class Sınıf Seçici</h4>
+
+    <div class="sinifSecici">
+        Web sayfasında veya uygulama genelinde birden fazla elemente aynı stil
+        ayarlarını uygulamak için class seçicileri kullanırız.
+    </div>
+    
+    <p class="sinifSecici">
+        Element tagi içerisine class yazıp css dosyasında yazılan class adını vererek kullanırız.
+    </p>
+    
+    <div class="sinifSecici">
+        Css dosyası içerisinde . işaretiyle class oluşturuyoruz.
+        <br />
+        Örneğin: .sinifSecici{}
+    </div>
+
+    <style>
+        .sinifSecici { /* sinifSecici class etiketlenmiş elementlere uygulanır*/ background-color: green; color: white;}
+        
+        p.sinifSecici { /* sinifSecici class eklenmiş p elementlerine uygulanır*/
+            background-color: white;
+            color: green;
+        }
+
+        .center {text-align: center;}
+    </style>
+
+    <p class="sinifSecici center" >
+        Bir elemente class özelliğiyle içerisine aralarda boşluk bırakarak birden fazla class uygulayabiliriz.
+    </p>
+
+
+    <div id="anaDiv">
+        <p>
+            Ana div içindeki ilk p
+        </p>
+        <p>
+            Bir html elementin içindeki alt elementleri de hedefleyerek stil uygulayabiliriz.
+            Örneğin: #anaDiv p{}
+        </p>
+        <p>
+            Ana div içindeki son p
+        </p>
+
+    </div>
+
+    <style>
+        div#anaDiv p { /*divlerden id değeri anaDiv olan elementin altındaki tüm p leri seç*/
+                       background-color: purple;
+                       color: azure;
+        }
+        #anaDiv p:first-child {background-color: gray; color: antiquewhite;}
+        #anaDiv p:last-child  {background-color: gray; color: antiquewhite;}
+    </style>
+    
+    <h3>
+        1 Elemente 1 den fazla CSS uygulanırsa
+    </h3>
+    <ol>
+        <li> Satır içi stil (elemente inline css yazımı) geçerli olur.</li>
+        <li> Dış css dosyası veya sayfa içindeki style alanındaki css ler</li>
+        <li> Tarayıcının varsayıan css kodları</li>
+    </ol>
+
+    <h1 style="border: 1px solid tomato"> border solid :  düz çizgi</h1>
+    <h2 style="border: 2px dashed tomato"> border dashed :  kesik çizgi</h2>
+    <h3 style="border: 3px dotted tomato"> border dotted :  noktalı çizgi</h3>
+    <h4 style="border: 4px double tomato"> border double :  çift çizgi</h4>
+    <h5 style="border: 5px groove tomato"> border groove :  groove çizgi</h5>
+    <h6 style="border: 6px inset tomato"> border inset :  içeri geçişli çizgi</h6>
+    <h6 style="border: 6px outset tomato"> border outset :  dışarı geçişli çizgi</h6>
+
+
+</body>
+    </html >

@@ -67,8 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CssEgitimi\Css-01-giris.html" />
+    <Content Include="CssEgitimi\Css-02-arkaplanlar.html" />
+    <Content Include="CssEgitimi\Css-03-margin-padding.html" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="index.html" />
+    <Content Include="Resimler\evgor.png" />
     <Content Include="Resimler\google.png" />
+    <Content Include="stil.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
