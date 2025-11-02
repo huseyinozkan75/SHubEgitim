@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Konu09 Seçiciler</title>
+</head>
+<body>
+    <h1>Konu09 Seçiciler</h1>
+    <p>
+        Javascript ile DOM (Document object model) üzerinde herhhangi bir elementi seçip
+        değerini okuyabilir veya değiştirebiliriz.
+    </p>
+    <h2>Elementleri Id Değerine Göre Seçme</h2>
+    
+    <p id="idyegoresec">
+        Merhaba
+    </p>
+
+    <p id="jsidSeciciTest" style="border: 1px solid">
+
+    </p>
+
+    <script>
+        const icerik = document.getElementById("idyegoresec"); // getElementById metodu
+        // sayfadaki id si verilen elementi getirir.
+
+        document.getElementById("jsidSeciciTest").innerText = "idyegoresec elemntinden gelen"
+            + "icerik: " + icerik.innerText;
+
+        
+    </script>
+
+    <hr />
+
+    <h2>Elementleri Etiket Adına (Tag Name) Göre Seçme</h2>
+    <p>
+        Sayfadaki html elementlerini div, p, select vb kullanılan tag e göre seçebiliriz.
+    </p>
+
+    <div>
+        1. div içeriği
+    </div>
+    <div>
+        2. div içeriği
+    </div>
+    <div id="bosDiv" style="border: 1px solid"></div>
+
+    <script>
+        var divler = document.getElementsByTagName("div"); // bu metot sayfadaki elementleri tagine göre seçer.
+        console.log(divler);
+        document.getElementById("bosDiv").innerText = "sayfadaki ilk div in içeriği: " + divler[0].innerText;
+    </script>
+    
+    <h2 class="sinifSeciciBaslik">Elementleri Class Adına Göre Seçme</h2>
+    <p class="sinifSeciciBaslik">
+        css deki class değerine göre elementleri seçmemizi sağlar.
+    </p>
+
+    <p id ="sinifSecici" style="border: 1px solid">  </p>
+
+    <script>
+        var sinifagoreSecilenElemanlar = document.getElementsByClassName("sinifSeciciBaslik"); // getElementsByClassName metodu bize class
+        // özelliği verilen html elementlerini dizi formatında getirir. 
+        console.log(sinifagoreSecilenElemanlar);
+
+        document.getElementById("sinifSecici").innerText = "<br>sınıf seçici ile seçilen 1. element değeri. " + sinifagoreSecilenElemanlar[0].innerText;
+        document.getElementById("sinifSecici").innerText += "<br>sınıf seçici ile seçilen 2. element değeri. " + sinifagoreSecilenElemanlar[1].innerText;
+    </script>
+
+    <hr />
+    <h2 id="sorguSecici"> Elementleri Css Sorgularına Göre Seçme</h2>
+    <p>
+        Css de kullandığımız element seçme yöntemlerini kullanarak sayfadan element seçmemizi sağlar.
+    </p>
+
+    <p id="ilkElemanicerigi" style="border: 1px solid"></p>
+
+    <script>
+        var ilkEleman = document.querySelector("p"); // querySelector metodu css
+        // sorgularıyla eleman seçmemizi sağlar.
+        console.log(ilkEleman);
+        document.querySelector("#ilkElemanicerigi").innerText = ilkEleman.innerText;
+
+        var pler = document.querySelectorAll("p"); // querySelectorAll metodu css sorgularıyla eşleşen tüm elementleri getirir.
+        console.log(pler);
+    </script>
+</body>
+</html>
