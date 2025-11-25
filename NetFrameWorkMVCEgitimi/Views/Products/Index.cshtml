@@ -1,0 +1,222 @@
+﻿@{
+    string[] productImageLinks = new string[6] { "https://www.evgor.com.tr/sirius-luks-yatak-odasi-377928-51-K.webp",
+                                        "https://www.evgor.com.tr/impera-luks-yemek-odasi-374987-51-K.webp",
+                                        "https://www.evgor.com.tr/porenza-klasik-makam-odasi-378015-33-K.webp",
+                                        "https://www.evgor.com.tr/sirius-luks-yatak-odasi-377928-51-K.webp",
+                                        "https://www.evgor.com.tr/impera-luks-yemek-odasi-374987-51-K.webp",
+                                        "https://www.evgor.com.tr/porenza-klasik-makam-odasi-378015-33-K.webp"
+                                      };
+
+    string[] productTitles = new string[6] { "Sirius Lüx Yatak Odası",
+                                    "İmperia Lüx Yatak Odası",
+                                    "Porenza Klasik Makam Odası",
+                                    "Sirius Lüx Yatak Odası",
+                                    "İmperia Lüx Yatak Odası",
+                                    "Porenza Klasik Makam Odası" };
+
+    string carousel_picture1 = "../Pictures/evgor.png";
+    string carousel_picture2 = "../Pictures/google.png";
+    }
+
+
+<h2>Ürünler Sayfası</h2>
+
+<div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=@carousel_picture1 class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black; background-color: transparent;">First slide label</h5>
+                    <p style="color: black; background-color: transparent;">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=@carousel_picture2 class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black; background-color: transparent;">Second slide label</h5>
+                    <p style="color: black; background-color: transparent;">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item"">
+                <img src=@carousel_picture1 class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black; background-color: transparent;">Third slide label</h5>
+                    <p style="color: black; background-color: transparent;">Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[0] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[0]</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[1] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[1]</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[2] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[2]</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[3] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[3]</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[4] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[4]</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=@productImageLinks[5] class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@productTitles[5]</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-docs.png" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold text-body-emphasis">Evgör Mobilya</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Eviniz için en güzel yemek odası, yatak odası ve oturma grupları burada</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Kampanyalı Ürünler</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Luxury Modeller</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Kurumsal</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Kariyer Fırsatı</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Referanslarımız</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Ödeme Seçenekleri</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Sertifikalarımız</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>KATEGORİLER</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Köşe Koltuk Takımları</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Yatak Odaları</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Yemek Odaları</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Koltuk Takımları</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">TV Üniteleri</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>YARDIM VE İLETİŞİM</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Bize Ulaşın</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Güvenli Alışveris</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Neden Evgör Mobilya</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Kullanım Koşulları</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">KVKK ve Aydınlatma Metni</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>E-bültene abone ol</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2025 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
